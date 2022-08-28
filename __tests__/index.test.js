@@ -1,9 +1,6 @@
 import React from 'react';
 import { configure, shallow } from 'enzyme';
-// import {  fireEvent ,render } from '@testing-library/react';
-
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-
 import findByTestAttrib from '../utils/test/find-attrib';
 
 import MakerLookup from '../src/core/main';
@@ -135,61 +132,4 @@ describe('<Rist /> component', () => {
   });  
 });
 
-  // describe('Controls', () => {
-  //   test('Account change', () => {
-  //     // const wrapper = setup();
-  //     const { getByTestId } = render(  <MakerLookup
-  //       ux={ux}
-  //       bucket="viacheck.dev.viamericas.net"
-  //       language=  "en"  
-  //       clientUrl={clientUrl} 
-  //       token={token}  
-  //       onShowLoading={onHandler} 
-  //       t={()=>{return "label"}} 
-  //       />)
-  //    // const component = wrapper.find("#account");
-  //    const text = getByTestId("account")    
-  //    fireEvent.change(text, {target: {value: '23'}})   
-  //    const textChanged = getByTestId("account")
-    
-  //     expect(textChanged.value).toBe('23');
-  //   });
-    
-
-  //   test('Routing change', () => {
-  //     // const wrapper = setup();
-  //     const { getByTestId } = render(  <MakerLookup
-  //       ux={ux}
-  //       bucket="viacheck.dev.viamericas.net"
-  //       language=  "en"  
-  //       clientUrl={clientUrl} 
-  //       token={token}  
-  //       onShowLoading={onHandler} 
-  //       t={()=>{return "label"}} 
-  //       />)    
-  //    const text = getByTestId("routing")    
-  //    fireEvent.change(text, {target: {value: '000000518'}})   
-  //    const textChanged = getByTestId("routing")
-  //     expect(textChanged.value).toBe('000000518');
-  //   });
-
-
-  //   test('example image', () => {
-  //     // const wrapper = setup();
-  //     const { getByTestId } = render(  <MakerLookup
-  //       ux={ux}
-  //       bucket="viacheck.dev.viamericas.net"
-  //       language=  "en"  
-  //       clientUrl={clientUrl} 
-  //       token={token}  
-  //       onShowLoading={onHandler} 
-  //       t={()=>{return "label"}} 
-  //       />)    
-  //    const text = getByTestId("image")    
-    
-  //     expect(text.src).toContain('assets/images/checkEn.png');
-  //   });   
-  
-// });
-
-
+ 
