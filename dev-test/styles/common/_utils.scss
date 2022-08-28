@@ -1,0 +1,6 @@
+@mixin transform($value...) {
+  -moz-transform: ($value); /* FF */
+  -webkit-transform: ($value); /* Safari and Chrome */
+  -o-transform: ($value); /* Opera */
+  transform: ($value);
+}

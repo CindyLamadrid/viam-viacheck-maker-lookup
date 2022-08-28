@@ -1,0 +1,14 @@
+{
+    "maker":{
+      "account":"Cuenta",
+      "routing":"Ruta" ,
+      "search":"Buscar"
+    },    
+  "viacheckRisk": {   
+    "checksAverage": "Avg. $ Cheques"  ,
+    "checkReturned": "Cheques Retornados",
+    "percentageReturned": "% Cheques Retornados",
+    "averageReturned": "Avg. $ Cheques Retornados",
+    "alertDay": "<span>Maker no cuenta con suficiente historial (menos de un mes con transacciones), recuerde que un cheque puede ser <span><b>retornado hasta después de 180 días</b><span>, por ejemplo por duplicidad o por alteración.",
+  }
+}

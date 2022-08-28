@@ -1,0 +1,15 @@
+{
+  "maker":{
+    "account":"Account",
+    "routing":"Routing" ,
+    "search":"Search"
+  },
+  "viacheckRisk": {
+    "checksAverage": "Avg. $ Checks",
+    "checkReturned": "Returned Checks",
+    "percentageReturned": "% Returned Checks",
+    "averageReturned": "Avg $ Returned Checks",
+    "alertDay": "<span>Maker does not have enough history (less than one month with transactions), remember that a check can be <span><b>returned after 180 days</b><span>, for example: for duplicity or alteration."
+   
+  }
+}
