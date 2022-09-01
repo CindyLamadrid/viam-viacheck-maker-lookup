@@ -19,6 +19,7 @@ const AppTest = () => {
           clientUrl={clientUrl} 
           token={token}  
           onShowLoading={()=>{}}   
+          viachecks={{enableRouteValidation:true}}
        />
      <br/>
     

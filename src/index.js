@@ -12,6 +12,7 @@ const MakerLookup = props => {
     ux,
     language,
     clientUrl,
+    viachecks,
     token
   } = props;
 
@@ -27,6 +28,7 @@ const MakerLookup = props => {
     language={language}
     clientUrl={clientUrl}
     token={token}
+    viachecks={viachecks}
     />
   );
 };
@@ -59,7 +61,8 @@ MakerLookup.defaultProps = {
     imageExample:'maker-lookup__image-example',
     containerImage:'row maker-lookup__no-margin maker-lookup__container-image',
     subcontainerResult:'maker-lookup__sub-container-result',
-  
+    invalidMessage:'maker-lookup__invalid-message',
+    borderInvalid:'maker-lookup__border-invalid'
     
   }
 };

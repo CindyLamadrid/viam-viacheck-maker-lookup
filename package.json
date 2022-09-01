@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@viamericas/viam-viacheck-maker-lookup",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A React component to ",
   "main": "build/index.js",
   "scripts": {

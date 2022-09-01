@@ -1,11 +1,12 @@
 import React, { Suspense, useState } from 'react';
-import { Services } from '@viamericas/viam-utils';
+import { Services ,Validation} from '@viamericas/viam-utils';
 import Image from './components/image';
+
 
 import CheckPreview from './components/checkPreview';
 
 const RiskScan = props => {
-  const {onShowLoading, bucket, ux, t, language, axiosInstance, clientUrl, token } = props;
+  const {onShowLoading, bucket, ux, t, language, axiosInstance, clientUrl,viachecks, token } = props;
 
   const [account, setAccount] = useState();
   const [routing, setRouting] = useState();
@@ -15,6 +16,7 @@ const RiskScan = props => {
     show: true,
     message: ''
   });
+const [isValidRouting,setValidRouting]=useState(false);
 
   const onchangeAccount = e => {
     const { value } = e.target;
@@ -24,6 +26,10 @@ const RiskScan = props => {
   const onchangeRouting = e => {
     const { value } = e.target;
     setRouting(value);
+    setValidRouting( Validation.Routing.isValid(
+      value,
+      viachecks.enableRouteValidation
+    ));
   };
 
   const getMessageCheckAlert = message => {
@@ -180,7 +186,9 @@ const RiskScan = props => {
             <input
               id="account"
               type="text"
-              data-testid="account"
+              data-testid="account"  
+              maxLength="18"
+              size="18"
               value={account}
               className={ux.input}
               onChange={e => onchangeAccount(e)}
@@ -193,14 +201,20 @@ const RiskScan = props => {
             {t('maker.routing')}
             <input
               id="routing"
+              maxLength="9"
+              size="13"
               data-testid="routing"
               type="text"
-              className={ux.input}
+              className={`${ux.input} ${ !isValidRouting &&routing ? ux.borderInvalid:''}`}
               value={routing}
               onChange={e => onchangeRouting(e)}
               onKeyPress={(event) => setNumericFormat(event)}
             />
           </label>
+          <div className={ux.invalidMessage}>
+            { !isValidRouting && routing
+            ? t("checkProcessing.invalidRouting"):''}
+          </div>
         </div>
       </div>
       <div className={ux.row}>
@@ -212,6 +226,7 @@ const RiskScan = props => {
             value={t('maker.search')}
             className={ux.search}
             onClick={() => onSearch()}
+            disabled={!account || !isValidRouting || !routing}
           />
         </div>
       </div>     
