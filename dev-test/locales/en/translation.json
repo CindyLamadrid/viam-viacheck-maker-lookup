@@ -5,6 +5,7 @@
     "search":"Search"
   },
   "viacheckRisk": {
+    "checksDeposited": "Deposited Checks",
     "checksAverage": "Avg. $ Checks",
     "checkReturned": "Returned Checks",
     "percentageReturned": "% Returned Checks",
