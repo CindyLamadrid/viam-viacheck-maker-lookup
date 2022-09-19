@@ -193,6 +193,7 @@ const [isValidRouting,setValidRouting]=useState(false);
               className={ux.input}
               onChange={e => onchangeAccount(e)}
               onKeyPress={(event) => setNumericFormat(event)}
+              placeholder = {t('maker.accountLength')}
             />
           </label>
         </div>
@@ -209,6 +210,7 @@ const [isValidRouting,setValidRouting]=useState(false);
               value={routing}
               onChange={e => onchangeRouting(e)}
               onKeyPress={(event) => setNumericFormat(event)}
+              placeholder = {t('maker.routingLength')}
             />
           </label>
           <div className={ux.invalidMessage}>
@@ -223,7 +225,7 @@ const [isValidRouting,setValidRouting]=useState(false);
             type="button"
             id="search"
             data-testid="search"
-            value={t('maker.search')}
+            value={t('maker.search')}         
             className={ux.search}
             onClick={() => onSearch()}
             disabled={!account || !isValidRouting || !routing}
