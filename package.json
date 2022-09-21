@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@viamericas/viam-viacheck-maker-lookup",
-  "version": "0.0.9",
+  "version": "1.0.2",
   "description": "A React component to ",
   "main": "build/index.js",
   "scripts": {
@@ -69,7 +69,7 @@
     "utif": "^3.1.0"
   },
   "dependencies": {
-    "@viamericas/viam-alert-messages": "^6.0.0",
+    "@viamericas/viam-alert-messages": "^6.0.1",
     "@viamericas/viam-loading": "1.0.0",
     "@viamericas/viam-steps": "^1.0.5",
     "@viamericas/viam-utils": "^2.2.0",
@@ -83,7 +83,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-draggable": "^4.4.4",
-    "react-i18next": "11.14.3",   
+    "react-i18next": "11.14.3",
+    "react-tooltip": "^4.2.21",
     "utif": "^3.1.0"
   },
   "devDependencies": {
@@ -94,7 +95,7 @@
     "@babel/plugin-transform-runtime": "7.16.5",
     "@babel/preset-env": "7.16.5",
     "@babel/preset-react": "7.16.5",
-    "@fortawesome/fontawesome-free": "5.15.4", 
+    "@fortawesome/fontawesome-free": "5.15.4",
     "@types/bootstrap": "4.6.1",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.6",
     "babel-cli": "6.26.0",

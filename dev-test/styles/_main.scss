@@ -94,14 +94,6 @@
     padding-top: 25px;
   }
 
-  &__sub-container-result {
-    width: 100%;
-    padding: 20px;
-  }
-
-  &__alert {
-    text-align: center;
-  }
 
   &__maker-lookup {
     max-height: 85vh !important;
@@ -123,4 +115,72 @@
   &__border-invalid {
     border-bottom: 4px solid red !important;
   }
+  &__width-40{
+    width: 40px;
+  }
+  
+  &__sub-container-result {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+    
+  &__alert {
+    text-align: center;
+  }
+
+  &__header-result {
+   padding-top: 20px;
+  }
+
+  &__empty{
+    margin-top: 24px;
+  }
+
+  &__text-helpCheckSize {
+    font-size: 14px !important;
+    background-color: rgba($primary, 1) !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+    min-width: 120px !important;
+  }
+  &__text-helpCheckSize.place-bottom::after {
+    border-bottom-color: $primary !important;
+  }
+  &__text-helpCheckSize.place-top::after {
+    border-top-color: $primary !important;
+  }
+  &__text-helpCheckSize.place-left::after {
+    border-left-color: $primary !important;
+  }
+  &__text-helpCheckSize.place-right::after {
+    border-right-color: $primary !important;
+  }
+
+  &__question-mark {
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+  }
+  &__requirement-container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  &__check-icon {
+    color: #4caf50;
+  }
+
+  &__mg-top-5 {
+    margin-top: 5px;
+  }
+
+  &__check-fields {
+    width: 100%;
+  }
+
+  
+
 }

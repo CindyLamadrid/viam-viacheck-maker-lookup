@@ -1,14 +1,30 @@
 {
     "maker":{
-      "account":"Cuenta",
-      "routing":"Ruta" ,
-      "search":"Buscar"
+      "account": "Cuenta",
+      "routing": "Ruta",
+      "search": "Buscar",
+      "footer": " Para clientes y Makers nuevos recomendamos validar la información del Cliente + Maker + Cuenta haciendo clic en botón de Análisis del Riesgo",
+      "close": "Cerrar",
+      "riskAnalysis": "Análisis de Riesgo",
+      "accountLength": "1 - 17 Dígitos",
+      "routingLength": "9 Dígitos"
     },    
   "viacheckRisk": {   
     "checksAverage": "Avg. $ Cheques"  ,
     "checkReturned": "Cheques Retornados",
     "percentageReturned": "% Cheques Retornados",
     "averageReturned": "Avg. $ Cheques Retornados",
-    "alertDay": "<span>Maker no cuenta con suficiente historial (menos de un mes con transacciones), recuerde que un cheque puede ser <span><b>retornado hasta después de 180 días</b><span>, por ejemplo por duplicidad o por alteración.",
+    "alertDay": "<span>Maker no cuenta con suficiente historial (menos de un mes con transacciones), recuerde que un cheque puede ser <span><b>retornado hasta después de 180 días</b><span>, por ejemplo por duplicidad o por alteración.",,
+    "lastReturnedReason": "Motivo Último Retorno",
+    "lastReturned": "Último Retorno",
+    "firstCheck": "Primer Cheque",
+    "help": "Si necesita ayuda, por favor comuníquese con nuestro departamento de ViaCheck",
+    "requirementGuide": "Requisitos de la guía",
+    "importantGuide": "<span><b>IMPORTANTE:</b> <span>Los siguientes datos  deben coincidir. En caso de presentar diferencias <span><b>NO</b><span> procese el cheque.",
+    "stepsGuide": " Logo e información del maker<div> Logo e información del banco<div> Firma del maker<div> Tipo y tamaño de letra<div> Posición de la información en el cheque<div> Medidas de seguridad en el cheque<div> Diseño del cheque",,
+     "notesLabel": "NOTA:",
+    "notes": "Tenga en cuenta que si es un Payroll Company, la información del maker cambia.",
+    "instructionVerify": "Los campos resaltados en verde, deben presentarse al usuario y adicional dar una guía para que el agente pueda comparar el cheque",
+    "helpCheck": "Click here to see what should be analyzed from the image."
   }
 }

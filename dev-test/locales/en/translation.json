@@ -1,8 +1,13 @@
 {
   "maker":{
-    "account":"Account",
-    "routing":"Routing" ,
-    "search":"Search"
+    "account": "Account",
+    "routing": "Routing",
+    "search": "Search",
+    "footer": "For new customers and Makers we recommend validating the Customer + Maker + Account information by clicking the Risk Analysis button",
+    "close": "Close",
+    "riskAnalysis": "Risk Analysis",
+    "accountLength": "4 - 17 Digits",
+    "routingLength": "9 Digits"
   },
   "viacheckRisk": {
     "checksDeposited": "Deposited Checks",
@@ -10,7 +15,17 @@
     "checkReturned": "Returned Checks",
     "percentageReturned": "% Returned Checks",
     "averageReturned": "Avg $ Returned Checks",
-    "alertDay": "<span>Maker does not have enough history (less than one month with transactions), remember that a check can be <span><b>returned after 180 days</b><span>, for example: for duplicity or alteration."
-   
+    "alertDay": "<span>Maker does not have enough history (less than one month with transactions), remember that a check can be <span><b>returned after 180 days</b><span>, for example: for duplicity or alteration.",
+    "lastReturnedReason": "Last Returned Reason",
+    "lastReturned": "Last Returned",
+    "firstCheck": "First Check",
+    "help": "If you need help, please contact our ViaCheck department",
+    "requirementGuide": "Requirement Guide",
+    "instructionVerify": "The fields highlighted in green must be presented to the user and additionally give a guide so that the agent can compare the check",
+    "importantGuide": "<span><b> IMPORTANT: </b><span> The following data must match. In case of <span><b> NO </b><span> differences, process the check.",
+    "stepsGuide": " Logo and information of the maker<div> Logo and information of the bank <div> Signature of the maker <div> Type and size of font <div> Position of the information in the check <div> Measurements of check security <div> Check design ",
+    "notesLabel": "NOTES:",
+    "notes": "Please note that if you are a Payroll Company, the maker information changes.",
+    "helpCheck": "Haga clic aquí para ver que se debe analizar de la imagén."   
   }
 }
